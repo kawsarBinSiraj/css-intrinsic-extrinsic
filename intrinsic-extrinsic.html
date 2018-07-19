@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="#">
+        <title>css filter effects</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+        <!-- Custom styles for this template -->
+        <style type="text/css">
+            body {
+                padding-top: 5rem;
+            } 
+     		
+			.container > div {
+				border:1px solid #ddd;
+				padding: 5px;
+				margin-bottom: 10px;
+			}
+
+    
+			.min-content {
+			  width: -webkit-min-content;
+			  width: min-content;
+			}
+
+			.max-content {
+			  width: -webkit-max-content;
+			  width: max-content;
+			}
+
+			.fit-content {
+			  width: -webkit-fit-content;
+			  width: fit-content;
+			}
+
+			
+			.fill-available {
+			 /* by default value */
+			  width: -webkit-fill;
+			  width: fill;
+			}
+
+        </style>
+    </head>
+    <body>
+
+
+       <div class="container"> 
+           <div class="normal">
+           		I use the default styles. @Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis architecto adipisci repudiandae voluptas officiis natus modi nisi, doloribus porro aspernatur voluptatibus, quidem nostrum reprehenderit perferendis quod enim praesentium! Tempore, dolorem.
+           </div>
+		   <div class="min-content">
+		   		I am styled with <code>width: min-content</code>. @Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, animi.
+		   </div>
+		   <div class="max-content">
+		   		I am styled with <code>width: max-content</code>. @Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto quam sapiente sit esse aliquam blanditiis unde at magni vero laborum repellendus recusandae eaque nobis eius facere facilis, sequi similique.
+		   </div>
+		   <div class="fit-content">
+		   		I am styled with <code>width: fit-content</code>.
+		   		<strong><var>if you do responsive this div you can see that this img auto reduce width by the div width. 
+		   		this this fit-content for the div</var></strong>
+		   		<img src="http://nysurfsoccer.org/wp-content/uploads/2017/03/IMG.png" alt="" style="margin-top: 10px;display:block;">
+		   </div>
+		   <div class="fill-available">
+		   		I am styled with <code>width: -webkit-fill</code>. 
+		   		<strong><var>if you do responsive this div you can see that this img don't reduce width by the div width. 
+		   		fill property is not interfere for the elements personal behaviour </var></strong> 
+		   		<img src="http://nysurfsoccer.org/wp-content/uploads/2017/03/IMG.png" alt="" style="margin-top: 10px;display:block;">
+		   </div>
+       </div>
+       
+        
+    </body>
+</html>
